@@ -1,6 +1,6 @@
 # SauceDemo Automation Project
 
-## 📌 Project Description
+##  Project Description
 
 This project automates the SauceDemo web application using Selenium WebDriver.
 
@@ -11,7 +11,7 @@ This project automates the SauceDemo web application using Selenium WebDriver.
 * Pytest
 * Visual Studio Code
 
-## ✅ Test Scenarios Covered
+##  Test Scenarios Covered
 
 * Login functionality (valid & invalid)
 * Add product to cart
@@ -19,16 +19,15 @@ This project automates the SauceDemo web application using Selenium WebDriver.
 * Checkout process
 * Logout functionality
 
-## 📁 Project Structure
+##  Project Structure
 
 * `tests/` → Test scripts
 * `pages/` → Page Object Model files
 * `conftest.py` → Fixtures and setup
 
-## 🚀 How to Run
+##  How to Run
 
 1. Install dependencies:
-
    ```
    pip install selenium pytest
    ```
@@ -38,6 +37,6 @@ This project automates the SauceDemo web application using Selenium WebDriver.
    pytest
    ```
 
-## 🎯 Outcome
+##  Outcome
 
 Successfully automated key user flows of SauceDemo application and validated functionality using Selenium.
