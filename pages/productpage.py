@@ -9,7 +9,12 @@ class ProductPage():
         self.driver = driver
         self.product = (By.ID,"add-to-cart-sauce-labs-fleece-jacket")
         self.gocart = (By.XPATH,"//a[@class='shopping_cart_link']")
+        self.app_logo = (By.CLASS_NAME, "app_logo")
 
+    
+    def logo_displayed(self):
+        return self.driver.find_element(*self.app_logo).text
+    
     def addproduct(self):
         WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(self.product)).click()
 
