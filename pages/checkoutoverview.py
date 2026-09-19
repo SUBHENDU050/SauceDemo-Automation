@@ -1,4 +1,6 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 class CheckoutOverviewPage:
     finish_button = (By.ID, "finish")
@@ -7,9 +9,11 @@ class CheckoutOverviewPage:
         self.driver = driver
 
     def finish_checkout(self):
-        self.driver.find_element(*self.finish_button).click()
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable(self.finish_button)
+        ).click()
 
-    print("Checkout Overview Page loaded successfully.")
+        print("Checkout Overview Page loaded successfully.")
 
 
     
