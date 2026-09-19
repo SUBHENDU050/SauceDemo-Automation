@@ -13,7 +13,7 @@ class CheckoutOverviewPage:
             EC.element_to_be_clickable(self.finish_button)
         ).click()
 
-        print("Checkout Overview Page loaded successfully.")
+print("Checkout Overview Page loaded successfully.")
 
 
     
